@@ -2,6 +2,9 @@ speed=int(input("Enter speed of the vehicle: "))
 type=input("Enter your vehicle type: ")
 seat_belt=input("Are you wearing seat belt, yes/no: ")
 helmet=input("Are you wearing helmet, yes/no: ")
+type=type.lower()
+seat_belt=seat_belt.lower()
+helmet=helmet.lower()
 fine=0
 if speed>80:
     fine=2000
