@@ -1,0 +1,17 @@
+speed=int(input("Enter speed of the vehicle: "))
+type=input("Enter your vehicle type: ")
+seat_belt=input("Are you wearing seat belt, yes/no: ")
+helmet=input("Are you wearing helmet, yes/no: ")
+fine=0
+if speed>80:
+    fine=2000
+if type=='car' and seat_belt=='no':
+        fine+=1000
+if type=='bike' and helmet=='no':
+        fine+=1500
+if type=='truck' and speed>60:
+        fine+=3000
+if fine==0:
+    print("No Fine. Drive Safe")
+else:
+    print("Total Fine: ", fine)
